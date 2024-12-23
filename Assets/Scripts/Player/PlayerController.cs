@@ -28,7 +28,7 @@ public class PlayerController
 
         playerState = PlayerState.InDark;
 
-        LightSwitchView.lightSwitch += OnLightSwitchToggled;
+        LightSwitchView.lightToggled += OnLightSwitchToggled;
     }
 
     public void Interact() => IsInteracted = Input.GetKeyDown(KeyCode.E) ? true : (Input.GetKeyUp(KeyCode.E) ? false : IsInteracted);
